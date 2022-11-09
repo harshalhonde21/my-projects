@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: black;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .bubble {
+            position: relative;
+            display: flex;
+        }
+
+        .bubble span {
+            position: relative;
+            height: 30px;
+            width: 30px;
+            background-color: rgb(40, 251, 251);
+            margin: 0 5px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 10px rgb(175, 241, 241),
+                0 0 50px rgb(40, 251, 251),
+                0 0 100px rgb(40, 251, 251);
+            animation: animate 13s linear infinite;
+            animation-duration: calc(130s / var(--i));
+        }
+
+        .bubble span:nth-child(even) {
+            background: rgb(222, 13, 9);
+            box-shadow: 0 0 0 10px rgb(107, 46, 46),
+                0 0 50px rgb(222, 13, 9),
+                0 0 100px rgb(249, 44, 7);
+        }
+
+        .bubble span:nth-child(3n-1) {
+            background: rgb(13, 241, 77);
+            box-shadow: 0 0 0 10px rgb(39, 81, 45),
+                0 0 50px rgb(105, 220, 18),
+                0 0 100px rgb(35, 190, 56);
+        }
+        .bubble span:nth-child(4n-1) {
+            background: rgb(235, 6, 223);
+            box-shadow: 0 0 0 10px rgb(84, 35, 84),
+                0 0 50px rgb(203, 91, 192),
+                0 0 100px rgb(
+                    203, 91, 192);
+        }
+
+
+        @keyframes animate {
+            0% {
+                transform: translateY(100vh) scale(0);
+            }
+
+            100% {
+                transform: translateY(-10vh) scale(1);
+            }
+        }
+
+        h1 {
+            font-size: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: whitesmoke;
+            margin-top: -456px;
+            margin-left: 190px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bubble">
+            <span style="--i:11"></span>
+            <span style="--i:32"></span>
+            <span style="--i:23"></span>
+            <span style="--i:74"></span>
+            <span style="--i:15"></span>
+            <span style="--i:36"></span>
+            <span style="--i:17"></span>
+            <span style="--i:28"></span>
+            <span style="--i:39"></span>
+            <span style="--i:20"></span>
+            <span style="--i:21"></span>
+            <span style="--i:32"></span>
+            <span style="--i:43"></span>
+            <span style="--i:54"></span>
+            <span style="--i:95"></span>
+            <span style="--i:46"></span>
+            <span style="--i:27"></span>
+            <span style="--i:45"></span>
+            <span style="--i:36"></span>
+            <span style="--i:17"></span>
+            <span style="--i:28"></span>
+            <span style="--i:39"></span>
+            <span style="--i:20"></span>
+            <span style="--i:21"></span>
+            <span style="--i:32"></span>
+            <span style="--i:43"></span>
+            <span style="--i:54"></span>
+            <span style="--i:95"></span>
+            <span style="--i:46"></span>
+            <span style="--i:27"></span>
+            <span style="--i:36"></span>
+            <span style="--i:17"></span>
+            <span style="--i:28"></span>
+            <span style="--i:39"></span>
+            <span style="--i:20"></span>
+            <span style="--i:21"></span>
+            <span style="--i:32"></span>
+            <span style="--i:43"></span>
+            <span style="--i:15"></span>
+
+
+
+        </div>
+    </div>
+    <h1>welcome to space world</h1>
+</body>
+
+</html>

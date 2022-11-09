@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header::before {
+            background: url("1.jpg")no-repeat center center/cover;
+            content: "";
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+
+        }
+
+        ul {
+            display: flex;
+            padding: 20px;
+            margin: -8px -8px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            padding: 7px;
+            color: white;
+            margin: 3px;
+            padding-top: 1px;
+           
+        }
+
+        a:hover {
+            box-shadow: 2px 2px 7px red;
+        }
+
+        input {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-left: 800px;
+            margin-top: -34px;
+            border: 2px solid red;
+            box-shadow: 2px 3px 50px 2px rgb(90, 209, 11);
+        }
+
+        input:hover {
+            box-shadow: 2px 3px 50px 2px red;
+        }
+
+
+        h1 {
+            color: rgb(246, 239, 239);
+            margin-top: 60px;
+            margin-left: 330px;
+            font-size: 40px;
+        }
+
+        p {
+            color: whitesmoke;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: whitesmoke;
+            font-size: 11px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 265px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+            <input type="text" name="" id="" placeholder="Ask any Query">
+        </div>
+
+    </header>
+    <section>
+        <h1>Welcome's to My GYM </h1>
+        <p>Hey, Guys welcome to our brand new GYM of Hudkeshwar in this GYM we have provide full facility of the
+            equipment and fully comfort and Trainers fullfill</p>
+    </section>
+    <footer>Copyright &copy; Css_by_Harshal All right reserved!</footer>
+</body>
+
+</html>
